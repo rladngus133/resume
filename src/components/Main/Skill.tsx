@@ -4,7 +4,9 @@ import styled from "styled-components";
 export default function Skill() {
   return (
     <>
-      <h2>Skill.</h2>
+      <h2>
+        Skill<span>.</span>
+      </h2>
       <Container>
         <h3>Languages</h3>
         <RightContainer>
@@ -38,6 +40,16 @@ export default function Skill() {
           </OL>
         </RightContainer>
       </Container>
+      <Container>
+        <h3>Soft Skill</h3>
+        <RightContainer>
+          <OL>
+            <li>LeaderShip</li>
+            <li>Communication</li>
+            <li>Teamwork</li>
+          </OL>
+        </RightContainer>
+      </Container>
     </>
   );
 }
@@ -62,9 +74,10 @@ const RightContainer = styled.div`
 `;
 
 const OL = styled.ol`
-  list-style: circle;
+  list-style: inside;
 
   & li {
+    font-weight: 100;
     margin: 10px 0;
   }
 `;

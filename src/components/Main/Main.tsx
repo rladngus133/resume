@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Skill from "./Skill";
 import Introduce from "./Introduce";
+import Experience from "./Experience";
+import Project from "./Project";
 
 export default function Main() {
   return (
@@ -14,6 +16,16 @@ export default function Main() {
       <Container>
         <Section>
           <Skill />
+        </Section>
+      </Container>
+      <Container>
+        <Section>
+          <Experience />
+        </Section>
+      </Container>
+      <Container>
+        <Section>
+          <Project />
         </Section>
       </Container>
     </>
@@ -33,16 +45,20 @@ const Section = styled.section`
   width: 100%;
 
   & H2 {
-    color: #9bc4e2;
-    font-size: 30px;
-    font-weight: 600;
+    color: black;
+    font-size: 50px;
+    font-weight: 500;
     padding: 3px 2px;
+
+    & > span {
+      color: red;
+    }
   }
 
   & p {
     font-size: 16px;
     padding: 3px 2px;
-
+    font-weight: 100;
     line-height: 28px;
   }
 `;
