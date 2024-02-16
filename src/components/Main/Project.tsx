@@ -1,10 +1,15 @@
 import { motion } from "framer-motion";
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import ModalPortal from "../Modal/Portal";
+import Modal from "../Modal/Modal";
 
 export default function Project() {
+  const [isModal, setIsModal] = useState(false);
+  const [projectInfo, setProjectInfo] = useState("");
+
   return (
-    <div>
+    <>
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -17,21 +22,34 @@ export default function Project() {
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, amount: "all" }}
       >
-        <a href="https://2-2-1-rolling.netlify.app/">
-          <Card style={{ backgroundColor: "#A64EFF" }}>
-            <img src={`${process.env.PUBLIC_URL}/images/Rolling.svg`} alt="Rolling_Logo" />
-          </Card>
-        </a>
-        <a href="https://project-cf3j.vercel.app/">
-          <Card style={{ backgroundColor: "#5534DA" }}>
-            <img src={`${process.env.PUBLIC_URL}/images/Taskify.svg`} alt="Taskify_Logo" />
-          </Card>
-        </a>
-        <Card style={{ backgroundColor: "#ccc" }}>
+        <Card
+          style={{ backgroundColor: "#A64EFF" }}
+          whileHover={{ scale: 0.95, opacity: 0.8 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={() => {
+            setIsModal(true);
+            setProjectInfo("rolling");
+          }}
+        >
+          <motion.img src={`${process.env.PUBLIC_URL}/images/Rolling.svg`} alt="Rolling_Logo" />
+        </Card>
+        <Card
+          style={{ backgroundColor: "#5534DA" }}
+          whileHover={{ scale: 0.95, opacity: 0.8 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={() => {
+            setIsModal(true);
+            setProjectInfo("taskify");
+          }}
+        >
+          <img src={`${process.env.PUBLIC_URL}/images/Taskify.svg`} alt="Taskify_Logo" />
+        </Card>
+        <Card style={{ backgroundColor: "#ccc", cursor: "default" }}>
           <span>...</span>
         </Card>
       </Container>
-    </div>
+      <ModalPortal>{isModal && <Modal onClick={setIsModal} projectInfo={projectInfo} />}</ModalPortal>
+    </>
   );
 }
 
@@ -42,7 +60,7 @@ const Container = styled(motion.div)`
   padding: 20px;
 `;
 
-const Card = styled.div`
+const Card = styled(motion.div)`
   position: relative;
   display: flex;
   width: 100px;
@@ -50,9 +68,11 @@ const Card = styled.div`
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   & img {
     width: 50%;
+    pointer-events: none;
   }
 
   & span {
