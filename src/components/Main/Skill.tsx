@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Badge from "../Badge";
 
 export default function Skill() {
   return (
@@ -11,8 +12,12 @@ export default function Skill() {
         <h3>Languages</h3>
         <RightContainer>
           <OL>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
+            <li>
+              JavaScript <Badge status="js" />
+            </li>
+            <li>
+              TypeScript <Badge status="ts" />
+            </li>
           </OL>
         </RightContainer>
       </Container>
@@ -23,11 +28,21 @@ export default function Skill() {
         </h3>
         <RightContainer>
           <OL>
-            <li>jQuery, React</li>
-            <li>Next.js</li>
-            <li>SCSS, Styled-Components</li>
-            <li>axios, TanStack-Query</li>
-            <li>Framer-Motion</li>
+            <li>
+              jQuery, React <Badge status="jr" />
+            </li>
+            <li>
+              Next.js <Badge status="next" />
+            </li>
+            <li>
+              SCSS, Styled-Components <Badge status="css" />
+            </li>
+            <li>
+              axios, TanStack-Query <Badge status="api" />
+            </li>
+            <li>
+              Framer-Motion <Badge status="framer" />
+            </li>
           </OL>
         </RightContainer>
       </Container>
@@ -44,9 +59,15 @@ export default function Skill() {
         <h3>Soft Skill</h3>
         <RightContainer>
           <OL>
-            <li>LeaderShip</li>
-            <li>Communication</li>
-            <li>Teamwork</li>
+            <li>
+              LeaderShip <Badge status="leaderShip" />
+            </li>
+            <li>
+              Communication <Badge status="communication" />
+            </li>
+            <li>
+              Teamwork <Badge status="teamwork" />
+            </li>
           </OL>
         </RightContainer>
       </Container>
