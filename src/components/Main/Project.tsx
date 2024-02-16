@@ -1,13 +1,22 @@
+import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 
 export default function Project() {
   return (
     <div>
-      <h2>
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: "all" }}
+      >
         Project<span>.</span>
-      </h2>
-      <Container>
+      </motion.h2>
+      <Container
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: "all" }}
+      >
         <a href="https://2-2-1-rolling.netlify.app/">
           <Card style={{ backgroundColor: "#A64EFF" }}>
             <img src={`${process.env.PUBLIC_URL}/images/Rolling.svg`} alt="Rolling_Logo" />
@@ -26,7 +35,7 @@ export default function Project() {
   );
 }
 
-const Container = styled.div`
+const Container = styled(motion.div)`
   display: flex;
 
   gap: 20px;

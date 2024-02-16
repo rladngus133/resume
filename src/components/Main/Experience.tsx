@@ -1,13 +1,22 @@
+import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 
 export default function Experience() {
   return (
     <>
-      <h2>
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: "all" }}
+      >
         Experience<span>.</span>
-      </h2>
-      <Container>
+      </motion.h2>
+      <Container
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: "all" }}
+      >
         <CareerInfoContainer>
           <h3>코드잇 부트캠프</h3>
           <p>2023.10.17~</p>
@@ -22,7 +31,11 @@ export default function Experience() {
           </OL>
         </JobInfoContainer>
       </Container>
-      <Container>
+      <Container
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: "all" }}
+      >
         <CareerInfoContainer>
           <h3>쏠비치 호텔&리조트(삼척)</h3>
           <p>2022.01.03 ~ 2022.12.18</p>
@@ -37,7 +50,11 @@ export default function Experience() {
           </OL>
         </JobInfoContainer>
       </Container>
-      <Container>
+      <Container
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: "all" }}
+      >
         <CareerInfoContainer>
           <h3>트랜스코스모스 코리아</h3>
           <p>2021.04.14 ~ 2021.09.10</p>
@@ -54,7 +71,7 @@ export default function Experience() {
   );
 }
 
-const Container = styled.div`
+const Container = styled(motion.div)`
   display: flex;
   padding: 20px;
 `;

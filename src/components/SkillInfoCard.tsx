@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 
@@ -9,7 +10,7 @@ interface Content {
   [key: string]: string;
 }
 
-export default function Modal({ status }: Props) {
+export default function SkillInfoCard({ status }: Props) {
   const content: Content = {
     js: "기본적인 문법부터 es6의 문법까지 능숙하게 사용이 가능합니다.",
     ts: "기본적인 타입명시와 interface,as 를 사용한 타입명시가 가능하지만 아직 미숙합니다.",
@@ -26,7 +27,7 @@ export default function Modal({ status }: Props) {
   };
 
   return (
-    <StyledModal>
+    <StyledModal initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
       <Arrow />
       <p>{content[status]}</p>
     </StyledModal>
@@ -42,7 +43,7 @@ const Arrow = styled.div`
   border-right: 8px solid #3b3b3b;
 `;
 
-const StyledModal = styled.div`
+const StyledModal = styled(motion.div)`
   background-color: #3b3b3b;
   width: 300px;
   text-align: left;

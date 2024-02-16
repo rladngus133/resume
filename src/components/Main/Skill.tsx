@@ -1,14 +1,23 @@
 import React from "react";
 import styled from "styled-components";
 import Badge from "../Badge";
+import { motion } from "framer-motion";
 
 export default function Skill() {
   return (
     <>
-      <h2>
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: "all" }}
+      >
         Skill<span>.</span>
-      </h2>
-      <Container>
+      </motion.h2>
+      <Container
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: "all" }}
+      >
         <h3>Languages</h3>
         <RightContainer>
           <OL>
@@ -21,7 +30,11 @@ export default function Skill() {
           </OL>
         </RightContainer>
       </Container>
-      <Container>
+      <Container
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: "all" }}
+      >
         <h3>
           Frameworks &<br />
           Libraries
@@ -46,16 +59,24 @@ export default function Skill() {
           </OL>
         </RightContainer>
       </Container>
-      <Container>
+      <Container
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: "all" }}
+      >
         <h3>Tools & IDEs</h3>
         <RightContainer>
           <OL>
-            <li>Git& GitHub</li>
+            <li>Git & GitHub</li>
             <li>VS Code</li>
           </OL>
         </RightContainer>
       </Container>
-      <Container>
+      <Container
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: "all" }}
+      >
         <h3>Soft Skill</h3>
         <RightContainer>
           <OL>
@@ -75,7 +96,7 @@ export default function Skill() {
   );
 }
 
-const Container = styled.div`
+const Container = styled(motion.div)`
   display: flex;
   gap: 30px;
   padding: 20px;

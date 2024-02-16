@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Modal from "./Modal";
+import SkillInfoCard from "./SkillInfoCard";
 
 interface Props {
   status: string;
 }
 
 export default function Badge({ status }: Props) {
-  const [isModal, setIsModal] = useState(false);
+  const [isCard, setIsCard] = useState(false);
 
   return (
     <>
-      <StyledBadge onMouseEnter={() => setIsModal(true)} onMouseLeave={() => setIsModal(false)}>
-        ? {isModal ? <Modal status={status} /> : ""}
+      <StyledBadge onMouseEnter={() => setIsCard(true)} onMouseLeave={() => setIsCard(false)}>
+        ? {isCard ? <SkillInfoCard status={status} /> : ""}
       </StyledBadge>
     </>
   );
