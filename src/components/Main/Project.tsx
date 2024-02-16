@@ -18,6 +18,9 @@ export default function Project() {
             <img src={`${process.env.PUBLIC_URL}/images/Taskify.svg`} alt="Taskify_Logo" />
           </Card>
         </a>
+        <Card style={{ backgroundColor: "#ccc" }}>
+          <span>...</span>
+        </Card>
       </Container>
     </div>
   );
@@ -31,6 +34,7 @@ const Container = styled.div`
 `;
 
 const Card = styled.div`
+  position: relative;
   display: flex;
   width: 100px;
   height: 100px;
@@ -40,5 +44,13 @@ const Card = styled.div`
 
   & img {
     width: 50%;
+  }
+
+  & span {
+    position: absolute;
+    pointer-events: none;
+    top: 10%;
+    color: white;
+    font-size: 48px;
   }
 `;

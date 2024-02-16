@@ -66,7 +66,7 @@ const CareerInfoContainer = styled.div`
   align-items: flex-end;
   padding-right: 20px;
   width: 30%;
-  border-right: 1px solid gray;
+  border-right: 1px solid #ccc;
 
   & h3 {
     font-size: 24px;

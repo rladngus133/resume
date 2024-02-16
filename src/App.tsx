@@ -1,4 +1,5 @@
 import BaseContainer from "./components/BaseContainer";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main/Main";
 import Progress from "./components/Progress";
@@ -15,6 +16,7 @@ function App() {
         <BaseContainer>
           <Header />
           <Main />
+          <Footer />
         </BaseContainer>
       </div>
     </>

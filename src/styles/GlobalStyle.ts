@@ -52,6 +52,13 @@ a{
 	color: #007bff;
 	text-decoration: none;
 }
+mark{
+	padding: 2px 4px;
+  font-size: 90%;
+  color: #fff;
+  background-color: #333;
+  border-radius: 3px;
+}
 `;
 
 export default GlobalStyle;
