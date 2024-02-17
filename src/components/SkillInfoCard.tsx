@@ -19,6 +19,7 @@ export default function SkillInfoCard({ status }: Props) {
     css: "SCSS, Styled-Components를 능숙하게 사용가능합니다.",
     api: "axios를 통한 서버통신에 익숙하며 TanStack/Query 를 사용한 CRUD구현 경험이 있습니다.",
     framer: "Framer-Motion 을 사용한 인터렉티브 웹사이트 구현이 가능합니다.",
+    figma: "디자이너가 제작한 피그마의 디자인을 보고 코드로 구현이 가능합니다.",
     leaderShip: `부트캠프 진행과정 모든 파트의 팀장을 맡았으며 팀원간의 불화가 단 한 번도 없었습니다. 
     또한 피어리뷰를 통한 확인시 팀원들의 만족도 또한 높았습니다.`,
     communication: "성인이 된 후 각종 서비스직을 경험해보며 여러유형에 대응가능한 커뮤니케이션 능력을 만들었습니다.",

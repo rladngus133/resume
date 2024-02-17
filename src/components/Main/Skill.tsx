@@ -69,6 +69,7 @@ export default function Skill() {
           <OL>
             <li>Git & GitHub</li>
             <li>VS Code</li>
+            <li>figma</li> <Badge status="figma" />
           </OL>
         </RightContainer>
       </Container>
