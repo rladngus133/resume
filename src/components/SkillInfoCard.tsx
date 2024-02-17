@@ -40,12 +40,12 @@ const Arrow = styled.div`
   border-bottom: 8px solid transparent;
   border-top: 8px solid transparent;
   border-left: 8px solid transparent;
-  border-right: 8px solid #3b3b3b;
+  border-right: 8px solid #222222;
 `;
 
 const StyledModal = styled(motion.div)`
-  background-color: #3b3b3b;
-  width: 300px;
+  background-color: #222222;
+  width: 350px;
   text-align: left;
   position: absolute;
   padding: 10px;
