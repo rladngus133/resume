@@ -20,12 +20,12 @@ export default function Main() {
       </Container>
       <Container>
         <Section>
-          <Experience />
+          <Project />
         </Section>
       </Container>
       <Container>
         <Section>
-          <Project />
+          <Experience />
         </Section>
       </Container>
     </>
