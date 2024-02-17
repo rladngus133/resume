@@ -10,8 +10,8 @@ export default function Introduce() {
       </motion.h2>
       <Container initial={{ opacity: 0, y: 20 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }}>
         <p>
-          2022년부터 프론트엔드 개발을 독학하며 2023년 10월경부터 부트캠프를 통해 개발세상에 한 걸음 내딪은 프론트엔드
-          개발자 김우현입니다. 언제나 유저 친화적인 <mark>UX</mark>를 고려한 인터렉티브한 웹사이트 구축을위해 고민하고
+          2022년부터 프론트엔드 개발을 독학하며 2023년 10월경부터 부트캠프를 통해 개발 세상에 한 걸음 내딛은 프론트엔드
+          개발자 김우현입니다. 언제나 유저 친화적인 <mark>UX</mark>를 고려한 인터렉티브한 웹사이트 구축을 위해 고민하고
           있습니다.
         </p>
         <br />
