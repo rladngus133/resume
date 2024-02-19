@@ -34,9 +34,12 @@ export default function Main() {
 
 const Container = styled.main`
   display: flex;
-  gap: 10px;
   padding: 45px 0;
   border-bottom: 1px solid #eee;
+
+  @media all and (max-width: 768px) {
+    padding: 20px 0;
+  }
 `;
 
 const Section = styled.section`
@@ -44,7 +47,7 @@ const Section = styled.section`
   flex-direction: column;
   width: 100%;
 
-  & H2 {
+  & h2 {
     color: black;
     font-size: 50px;
     font-weight: 500;
@@ -53,6 +56,10 @@ const Section = styled.section`
     & > span {
       color: red;
     }
+
+    @media all and (max-width: 768px) {
+      font-size: 35px;
+    }
   }
 
   & p {
@@ -60,5 +67,11 @@ const Section = styled.section`
     padding: 3px 2px;
     font-weight: 100;
     line-height: 28px;
+
+    @media all and (max-width: 768px) {
+      font-size: 12px;
+      padding: 0;
+      line-height: 20px;
+    }
   }
 `;

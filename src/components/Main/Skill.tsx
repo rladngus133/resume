@@ -36,7 +36,7 @@ export default function Skill() {
         viewport={{ once: true, amount: "all" }}
       >
         <h3>
-          Frameworks &<br />
+          Frameworks &<BR />
           Libraries
         </h3>
         <RightContainer>
@@ -110,6 +110,18 @@ const Container = styled(motion.div)`
     width: 25%;
     font-size: 24px;
     font-weight: 500;
+
+    @media all and (max-width: 768px) {
+      width: auto;
+      font-size: 20px;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 10px 10px 10px;
+    gap: 10px;
   }
 `;
 
@@ -124,5 +136,15 @@ const OL = styled.ol`
   & li {
     font-weight: 100;
     margin: 10px 0;
+
+    @media all and (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+`;
+
+const BR = styled.br`
+  @media all and (max-width: 768px) {
+    display: none;
   }
 `;

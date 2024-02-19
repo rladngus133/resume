@@ -74,6 +74,10 @@ export default function Experience() {
 const Container = styled(motion.div)`
   display: flex;
   padding: 20px;
+
+  @media all and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const CareerInfoContainer = styled.div`
@@ -88,11 +92,22 @@ const CareerInfoContainer = styled.div`
   & h3 {
     font-size: 24px;
     font-weight: 500;
+
+    @media all and (max-width: 768px) {
+      font-size: 20px;
+    }
   }
 
   & p {
     font-weight: 100;
     color: gray;
+  }
+
+  @media all and (max-width: 768px) {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    width: auto;
+    align-items: start;
   }
 `;
 
@@ -104,6 +119,14 @@ const JobInfoContainer = styled.div`
     font-weight: 300;
     font-style: italic;
     color: gray;
+
+    @media all and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    padding-left: 0;
   }
 `;
 
@@ -114,5 +137,14 @@ const OL = styled.ol`
   & li {
     font-weight: 100;
     margin-top: 10px;
+
+    @media all and (max-width: 768px) {
+      margin-top: 5px;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    padding: 0;
+    font-size: 12px;
   }
 `;

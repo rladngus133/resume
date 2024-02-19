@@ -81,5 +81,14 @@ const Card = styled(motion.div)`
     top: 10%;
     color: white;
     font-size: 48px;
+
+    @media all and (max-width: 768px) {
+      top: -30%;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    width: 50px;
+    height: 50px;
   }
 `;

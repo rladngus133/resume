@@ -42,6 +42,15 @@ const Arrow = styled.div`
   border-top: 8px solid transparent;
   border-left: 8px solid transparent;
   border-right: 8px solid #222222;
+
+  @media all and (max-width: 768px) {
+    left: 50px;
+    top: -13px;
+    border-bottom: 8px solid #222222;
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+  }
 `;
 
 const StyledModal = styled(motion.div)`
@@ -58,5 +67,14 @@ const StyledModal = styled(motion.div)`
   & p {
     font-size: 12px;
     line-height: 1.5;
+    @media all and (max-width: 768px) {
+      font-size: 10px;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    top: 25px;
+    left: -50px;
+    width: 150px;
   }
 `;

@@ -51,11 +51,17 @@ const Container = styled.header`
       color: red;
     }
   }
+
+  @media all and (max-width: 768px) {
+    & h1 {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
 `;
 
 const IMG = styled.img`
-  width: 15%2;
-  object-fit: cover;
+  width: 110px;
 `;
 
 const SideContainer = styled.div`
@@ -75,4 +81,12 @@ const InfoItemContainer = styled.div`
   display: flex;
   gap: 15px;
   align-items: center;
+
+  @media all and (max-width: 768px) {
+    gap: 5px;
+
+    & a {
+      font-size: 12px;
+    }
+  }
 `;
