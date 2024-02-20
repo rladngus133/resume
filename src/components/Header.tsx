@@ -61,7 +61,11 @@ const Container = styled.header`
 `;
 
 const IMG = styled.img`
-  width: 110px;
+  width: 15%;
+
+  @media all and (max-width: 768px) {
+    width: 110px;
+  }
 `;
 
 const SideContainer = styled.div`

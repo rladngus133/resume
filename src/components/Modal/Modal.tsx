@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { GoProjectRoadmap } from "react-icons/go";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { FaGithub } from "react-icons/fa6";
 import { FaLink } from "react-icons/fa";
@@ -13,6 +14,7 @@ interface Content {
   [key: string]: {
     url: string;
     githubUrl: string;
+    projectInfoUrl: string;
   };
 }
 
@@ -21,14 +23,16 @@ const Modal = ({ onClick, projectInfo }: Props) => {
     rolling: {
       url: "https://2-2-1-rolling.netlify.app/",
       githubUrl: "https://github.com/CodeIt-Part2-Team1/FirstProject",
+      projectInfoUrl: "https://wild-curiosity-a84.notion.site/Rolling-c1da51da5f444452a6aab17e7c8ce968?pvs=4",
     },
     taskify: {
       url: "https://project-cf3j.vercel.app/",
       githubUrl: "https://github.com/3-9-taskify/project",
+      projectInfoUrl: "https://wild-curiosity-a84.notion.site/Taskify-b5de2da1af45493f80ee43b613ecba47?pvs=4",
     },
   };
 
-  const { url, githubUrl } = content[projectInfo];
+  const { url, githubUrl, projectInfoUrl } = content[projectInfo];
 
   return (
     <>
@@ -43,9 +47,15 @@ const Modal = ({ onClick, projectInfo }: Props) => {
         </BackBtn>
         <LinkContainer>
           <div>
+            <GoProjectRoadmap />
+            <a href={projectInfoUrl}>
+              <span>프로젝트 소개</span>
+            </a>
+          </div>
+          <div>
             <FaLink />
             <a href={url}>
-              <span>Link</span>
+              <span>배포링크</span>
             </a>
           </div>
           <div>
@@ -98,6 +108,10 @@ const BackBtn = styled(motion.button)`
   align-items: center;
   color: gray;
   cursor: pointer;
+
+  @media all and (max-width: 768px) {
+    font-size: 10px;
+  }
 `;
 
 const LinkContainer = styled.div`
@@ -111,5 +125,13 @@ const LinkContainer = styled.div`
   & div {
     display: flex;
     gap: 15px;
+
+    @media all and (max-width: 768px) {
+      gap: 10px;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    font-size: 10px;
   }
 `;
