@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rladngus133.github.io/resume/sitemap.xml
