@@ -15,4 +15,8 @@ const Contatiner = styled.div`
   margin-top: 45px;
   margin-bottom: 20px;
   text-align: end;
+
+  @media all and (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
