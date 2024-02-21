@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { FaChevronDown } from "react-icons/fa";
 import { FaChevronUp } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 interface Props {
   title: string;
@@ -13,12 +14,17 @@ export default function ExtraDescription({ title, listNum }: Props) {
 
   return (
     <>
-      <Title onClick={() => setIsShow(!isShow)}>
+      <Title
+        onClick={() => setIsShow(!isShow)}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: "all" }}
+      >
         {title} {isShow ? <FaChevronUp /> : <FaChevronDown />}
       </Title>
       {isShow && listNum === 1 && (
         <>
-          <Description>
+          <Description initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
             <p>
               쏠비치 호텔&리조트의 업무를 끝낸후 앞으로 어떤걸 해야할지에 대하여 많은 고민을 하였습니다. 그러다 문득
               중학생시절부터 좋아했던 ' 컴퓨터 ' 에 관련된 직종을 해보는건 어떨까? 싶었습니다. (살면서 첫 프로그래밍은
@@ -46,7 +52,7 @@ export default function ExtraDescription({ title, listNum }: Props) {
       )}
       {isShow && listNum === 2 && (
         <>
-          <Description>
+          <Description initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
             <p>
               고등학생때는 막연한 꿈이없이 무언가를 만들어내는것이 좋아서 디자인과에 들어갔던것 같습니다. 대입의 생각이
               별로 없이 빠르게 취업을 하고싶어 대입을 포기하고 취업전선에 뛰어들었으나 잘 풀리지 않았으며 빠르게 군대를
@@ -68,7 +74,7 @@ export default function ExtraDescription({ title, listNum }: Props) {
       )}
       {isShow && listNum === 3 && (
         <>
-          <Description>
+          <Description initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
             <p>주관적으로 우수하다고 생각하는 부분은 Soft Skill 입니다.</p>
             <p>
               호텔&리조트 상황실, 하우스키핑, CS등 각종 업무를 하며 여러가지의 사람들을 만났으며 어떠한 유형에도 대처 할
@@ -96,7 +102,7 @@ export default function ExtraDescription({ title, listNum }: Props) {
   );
 }
 
-const Title = styled.div`
+const Title = styled(motion.div)`
   @keyframes moveY {
     0% {
       transform: translateY(0px);
@@ -130,7 +136,7 @@ const Title = styled.div`
   }
 `;
 
-const Description = styled.div`
+const Description = styled(motion.div)`
   border-top: 1px solid #ccc;
   padding: 10px;
 
