@@ -90,8 +90,8 @@ export default function ExtraDescription({ title, listNum }: Props) {
             </p>
             <p>
               이러한 점을 바탕으로 개인적으로 생각하는 강점은 Soft Skill 인 것 같으며 개발자란 직군또한 혼자 하는것이
-              아닌 팀원, 디자이너, 백엔드개발자와 협업을 하는 ' 팀구조 ' 의 직군이며 이때 성공적인 프로젝트의 완성을
-              위해서는 배려와 소통이 무엇보다 중요하다는것을 알고있습니다.
+              아닌 팀원, 디자이너, 백엔드개발자와 협업을 하는 여러사람과의 소통이 중요한 직군이며 이때 성공적인
+              프로젝트의 완성을 위해서는 배려와 소통이 무엇보다 중요하다는것을 알고있습니다.
             </p>
             <img src={`${process.env.PUBLIC_URL}/images/review1.png`} alt="review1" />
             <img src={`${process.env.PUBLIC_URL}/images/review2.png`} alt="review2" />
