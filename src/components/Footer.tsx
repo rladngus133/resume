@@ -14,7 +14,7 @@ export default function Footer() {
 const Contatiner = styled.footer`
   margin-top: 45px;
   margin-bottom: 20px;
-  text-align: end;
+  text-align: center;
 
   @media all and (max-width: 768px) {
     font-size: 12px;

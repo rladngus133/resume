@@ -1,4 +1,5 @@
 import BaseContainer from "./components/BaseContainer";
+import Comment from "./components/Comment";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Main from "./components/Main/Main";
@@ -16,6 +17,7 @@ function App() {
         <BaseContainer>
           <Header />
           <Main />
+          <Comment />
           <Footer />
         </BaseContainer>
       </div>
