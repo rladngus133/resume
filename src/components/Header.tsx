@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaBlog } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Header() {
   return (
@@ -28,6 +29,12 @@ export default function Header() {
             <FaBlog /> {""}
             <a href="https://wild-curiosity-a84.notion.site/6f0d17154ff84683821afd7a3a7ddd05?v=0a03f6d732cd45d9b5db8be1971e12f7&pvs=4">
               https://www.notion.so/rladngus133
+            </a>
+          </InfoItemContainer>
+          <InfoItemContainer>
+            <FaLinkedin /> {""}
+            <a href="https://www.linkedin.com/in/%EC%9A%B0%ED%98%84-%EA%B9%80-46926b2b5/">
+              https://linkedin.com/woohyun-kim
             </a>
           </InfoItemContainer>
         </InfoContainer>
