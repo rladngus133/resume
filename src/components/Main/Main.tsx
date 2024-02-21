@@ -5,6 +5,7 @@ import Introduce from "./Introduce";
 import Experience from "./Experience";
 import Project from "./Project";
 import Education from "./Education";
+import Extra from "./Extra";
 
 export default function Main() {
   return (
@@ -32,6 +33,11 @@ export default function Main() {
       <Container>
         <Section>
           <Experience />
+        </Section>
+      </Container>
+      <Container>
+        <Section>
+          <Extra />
         </Section>
       </Container>
     </>
