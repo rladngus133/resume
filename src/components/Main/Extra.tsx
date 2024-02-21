@@ -13,7 +13,7 @@ export default function Extra() {
         Extra<span>.</span>
       </motion.h2>
       <Container>
-        <ExtraDescription listNum={1} title="- 2022.01 ~ 2023.10 까지의 공백" />
+        <ExtraDescription listNum={1} title="- 2023.01 ~ 2023.10 까지의 공백" />
         <ExtraDescription listNum={2} title="- 고등학교졸업" />
         <ExtraDescription listNum={3} title="- Soft Skill" />
       </Container>
