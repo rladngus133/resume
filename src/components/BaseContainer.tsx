@@ -5,7 +5,7 @@ export default function BaseContainer({ children }: { children: ReactNode }) {
   return <Container>{children}</Container>;
 }
 
-const Container = styled.header`
+const Container = styled.div`
   max-width: 1140px;
   margin: 0 auto;
   padding-inline: 15px;

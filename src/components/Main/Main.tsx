@@ -10,41 +10,43 @@ import Extra from "./Extra";
 export default function Main() {
   return (
     <>
-      <Container>
-        <Section>
-          <Introduce />
-        </Section>
-      </Container>
-      <Container>
-        <Section>
-          <Skill />
-        </Section>
-      </Container>
-      <Container>
-        <Section>
-          <Project />
-        </Section>
-      </Container>
-      <Container>
-        <Section>
-          <Education />
-        </Section>
-      </Container>
-      <Container>
-        <Section>
-          <Experience />
-        </Section>
-      </Container>
-      <Container>
-        <Section>
-          <Extra />
-        </Section>
-      </Container>
+      <main>
+        <Container>
+          <Section>
+            <Introduce />
+          </Section>
+        </Container>
+        <Container>
+          <Section>
+            <Skill />
+          </Section>
+        </Container>
+        <Container>
+          <Section>
+            <Project />
+          </Section>
+        </Container>
+        <Container>
+          <Section>
+            <Education />
+          </Section>
+        </Container>
+        <Container>
+          <Section>
+            <Experience />
+          </Section>
+        </Container>
+        <Container>
+          <Section>
+            <Extra />
+          </Section>
+        </Container>
+      </main>
     </>
   );
 }
 
-const Container = styled.main`
+const Container = styled.div`
   display: flex;
   padding: 45px 0;
   border-bottom: 1px solid #eee;

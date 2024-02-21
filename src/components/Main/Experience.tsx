@@ -104,6 +104,7 @@ const CareerInfoContainer = styled.div`
   }
 
   @media all and (max-width: 768px) {
+    padding-bottom: 5px;
     border-right: none;
     border-bottom: 1px solid #ccc;
     width: auto;
@@ -127,6 +128,7 @@ const JobInfoContainer = styled.div`
 
   @media all and (max-width: 768px) {
     padding-left: 0;
+    padding-top: 5px;
   }
 `;
 

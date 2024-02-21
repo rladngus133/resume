@@ -11,7 +11,7 @@ export default function Footer() {
   );
 }
 
-const Contatiner = styled.div`
+const Contatiner = styled.footer`
   margin-top: 45px;
   margin-bottom: 20px;
   text-align: end;
