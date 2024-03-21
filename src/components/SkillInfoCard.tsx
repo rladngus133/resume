@@ -16,7 +16,7 @@ export default function SkillInfoCard({ status }: Props) {
     ts: "기본적인 타입명시와 interface,as 를 사용한 타입명시가 가능하지만 아직 미숙합니다.",
     jr: "제이쿼리, 리액트를 사용하여 능숙한 웹구현 및 코드작성이 가능합니다.",
     next: "Next.js를 사용한 SSG,SSR구현이 가능하며 페이지라우터 사용에 능숙합니다.",
-    css: "SCSS, Styled-Components를 능숙하게 사용가능합니다.",
+    css: "SCSS, Styled-Components, Tailwind를 능숙하게 사용가능합니다.",
     api: "axios를 통한 서버통신에 익숙하며 TanStack/Query 를 사용한 CRUD구현 경험이 있습니다.",
     framer: "Framer-Motion 을 사용한 인터렉티브 웹사이트 구현이 가능합니다.",
     figma: "디자이너가 제작한 피그마의 디자인을 보고 코드로 구현이 가능합니다.",

@@ -48,7 +48,7 @@ export default function Skill() {
               Next.js <Badge status="next" />
             </li>
             <li>
-              SCSS, Styled-Components <Badge status="css" />
+              SCSS, Styled-Components, Tailwind <Badge status="css" />
             </li>
             <li>
               axios, TanStack-Query <Badge status="api" />
