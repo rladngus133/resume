@@ -44,6 +44,17 @@ export default function Project() {
         >
           <img src={`${process.env.PUBLIC_URL}/images/Taskify.svg`} alt="Taskify_Logo" />
         </Card>
+        <Card
+          style={{ backgroundColor: "#5090FB" }}
+          whileHover={{ scale: 0.95, opacity: 0.8 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={() => {
+            setIsModal(true);
+            setProjectInfo("mogazoa");
+          }}
+        >
+          <img src={`${process.env.PUBLIC_URL}/images/Mogazoa.svg`} alt="Taskify_Logo" />
+        </Card>
         <Card style={{ backgroundColor: "#ccc", cursor: "default" }}>
           <span>...</span>
         </Card>

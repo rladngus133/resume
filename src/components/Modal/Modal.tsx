@@ -30,6 +30,11 @@ const Modal = ({ onClick, projectInfo }: Props) => {
       githubUrl: "https://github.com/3-9-taskify/project",
       projectInfoUrl: "https://wild-curiosity-a84.notion.site/Taskify-b5de2da1af45493f80ee43b613ecba47?pvs=4",
     },
+    mogazoa: {
+      url: "https://mogazoa4-2.vercel.app/",
+      githubUrl: "https://github.com/3-9-taskify/project",
+      projectInfoUrl: "https://wild-curiosity-a84.notion.site/MogaZoa-c6382a89e8f547cd9557c3d32bae776a?pvs=4",
+    },
   };
 
   const { url, githubUrl, projectInfoUrl } = content[projectInfo];
