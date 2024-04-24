@@ -19,7 +19,7 @@ export default function Experience() {
       >
         <CareerInfoContainer>
           <h3>코드잇 부트캠프</h3>
-          <p>2023.10.17~</p>
+          <p>2023.10.17 ~ 2024.04.08</p>
         </CareerInfoContainer>
         <JobInfoContainer>
           <h3>Front-End Bootcamp</h3>
