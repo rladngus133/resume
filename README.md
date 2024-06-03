@@ -17,4 +17,4 @@
 - [ ] 화이트모드 다크모드
 
 ## 로드맵
-<img width="331" alt="image" src="https://github.com/rladngus133/resume/assets/124851297/34982c34-f89a-4d10-8235-d5b2b6aac0b0">
+<img width="711" alt="image" src="https://github.com/rladngus133/resume/assets/124851297/34982c34-f89a-4d10-8235-d5b2b6aac0b0">
