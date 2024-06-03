@@ -52,15 +52,15 @@ const Modal = ({ onClick, projectInfo }: Props) => {
         </BackBtn>
         <LinkContainer>
           <div>
-            <GoProjectRoadmap />
-            <a href={projectInfoUrl}>
-              <span>프로젝트 소개</span>
+            <FaLink />
+            <a href={url}>
+              <span>Link</span>
             </a>
           </div>
           <div>
-            <FaLink />
-            <a href={url}>
-              <span>배포링크</span>
+            <GoProjectRoadmap />
+            <a href={projectInfoUrl}>
+              <span>프로젝트회고</span>
             </a>
           </div>
           <div>
@@ -102,7 +102,7 @@ const Container = styled.div`
   background-color: white;
   border-radius: 15px;
   z-index: 100;
-  padding: 10px;
+  padding: 10px 20px;
 `;
 
 const BackBtn = styled(motion.button)`
