@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 import styled from "styled-components";
 import Title from "../Common/Title";
 
@@ -9,7 +8,7 @@ export default function Introduce() {
       <Title>
         Introduce<span>.</span>
       </Title>
-      <Container initial={{ opacity: 0, y: 20 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }}>
+      <Container>
         <p>
           2022년부터 프론트엔드 개발을 독학하며 2023년 10월경부터 부트캠프를 통해 개발 세상에 한 걸음 내딛은 프론트엔드
           개발자 김우현입니다. 언제나 유저 친화적인 <mark>UX</mark>를 고려한 인터렉티브한 웹사이트 구축을 위해 고민하고

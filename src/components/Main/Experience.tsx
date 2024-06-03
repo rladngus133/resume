@@ -9,11 +9,7 @@ export default function Experience() {
       <Title>
         Experience<span>.</span>
       </Title>
-      <Container
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true, amount: "all" }}
-      >
+      <Container>
         <CareerInfoContainer>
           <h3>코드잇 부트캠프</h3>
           <p>2023.10.17 ~ 2024.04.08</p>
@@ -28,11 +24,7 @@ export default function Experience() {
           </OL>
         </JobInfoContainer>
       </Container>
-      <Container
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true, amount: "all" }}
-      >
+      <Container>
         <CareerInfoContainer>
           <h3>쏠비치 호텔&리조트(삼척)</h3>
           <p>2022.01.03 ~ 2022.12.18</p>
@@ -47,11 +39,7 @@ export default function Experience() {
           </OL>
         </JobInfoContainer>
       </Container>
-      <Container
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true, amount: "all" }}
-      >
+      <Container>
         <CareerInfoContainer>
           <h3>트랜스코스모스 코리아</h3>
           <p>2021.04.14 ~ 2021.09.10</p>

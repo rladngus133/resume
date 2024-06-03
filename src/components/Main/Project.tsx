@@ -14,11 +14,7 @@ export default function Project() {
       <Title>
         Project<span>.</span>
       </Title>
-      <Container
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true, amount: "all" }}
-      >
+      <Container>
         <Card
           style={{ backgroundColor: "#A64EFF" }}
           whileHover={{ scale: 0.95, opacity: 0.8 }}

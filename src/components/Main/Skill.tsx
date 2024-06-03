@@ -10,11 +10,7 @@ export default function Skill() {
       <Title>
         Skill<span>.</span>
       </Title>
-      <Container
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true, amount: "all" }}
-      >
+      <Container>
         <h3>Languages</h3>
         <RightContainer>
           <OL>
@@ -27,11 +23,7 @@ export default function Skill() {
           </OL>
         </RightContainer>
       </Container>
-      <Container
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true, amount: "all" }}
-      >
+      <Container>
         <h3>
           Frameworks &<BR />
           Libraries
@@ -56,11 +48,7 @@ export default function Skill() {
           </OL>
         </RightContainer>
       </Container>
-      <Container
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true, amount: "all" }}
-      >
+      <Container>
         <h3>Tools & IDEs</h3>
         <RightContainer>
           <OL>
@@ -72,11 +60,7 @@ export default function Skill() {
           </OL>
         </RightContainer>
       </Container>
-      <Container
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true, amount: "all" }}
-      >
+      <Container>
         <h3>Soft Skill</h3>
         <RightContainer>
           <OL>

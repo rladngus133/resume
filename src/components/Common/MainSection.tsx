@@ -1,10 +1,12 @@
 import React, { ReactNode } from "react";
 import styled from "styled-components";
+import { inViewAnimation } from "../../utils/animation";
+import { motion } from "framer-motion";
 
 export default function MainSection({ children }: { children: ReactNode }) {
   return (
     <Container>
-      <Section>{children}</Section>
+      <Section {...inViewAnimation}>{children}</Section>
     </Container>
   );
 }
@@ -19,7 +21,7 @@ const Container = styled.div`
   }
 `;
 
-const Section = styled.section`
+const Section = styled(motion.section)`
   display: flex;
   flex-direction: column;
   width: 100%;

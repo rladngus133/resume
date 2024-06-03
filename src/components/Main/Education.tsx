@@ -9,11 +9,7 @@ export default function Education() {
       <Title>
         Eduaction<span>.</span>
       </Title>
-      <Container
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true, amount: "all" }}
-      >
+      <Container>
         <EducationInfoContainer>
           <h3>동해상업고등학교</h3>
           <p>2015.03 ~ 2018.01</p>

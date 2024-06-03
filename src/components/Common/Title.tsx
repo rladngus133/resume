@@ -1,14 +1,9 @@
 import { HTMLMotionProps, motion } from "framer-motion";
 import styled from "styled-components";
-import { inViewAnimation } from "../../utils/animation";
 import { ReactNode } from "react";
 
 export default function Title({ children, ...props }: { children: ReactNode } & HTMLMotionProps<"h2">) {
-  return (
-    <H2 {...inViewAnimation} {...props}>
-      {children}
-    </H2>
-  );
+  return <H2 {...props}>{children}</H2>;
 }
 
 const H2 = styled(motion.h2)`

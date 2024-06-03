@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FaChevronDown } from "react-icons/fa";
 import { FaChevronUp } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { inViewAnimation } from "../../utils/animation";
 
 interface Props {
   title: string;
@@ -14,12 +15,7 @@ export default function ExtraDescription({ title, listNum }: Props) {
 
   return (
     <>
-      <Title
-        onClick={() => setIsShow(!isShow)}
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true, amount: "all" }}
-      >
+      <Title onClick={() => setIsShow(!isShow)} {...inViewAnimation}>
         {title} {isShow ? <FaChevronUp /> : <FaChevronDown />}
       </Title>
       {isShow && listNum === 1 && (
