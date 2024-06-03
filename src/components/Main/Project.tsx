@@ -15,7 +15,7 @@ export default function Project() {
         Project<span>.</span>
       </Title>
       {projects.map((item) => (
-        <ProjectSection key={item.id} setIsModal={setIsModal} setProjectInfo={setProjectInfo} {...item} />
+        <ProjectSection key={item.id} setIsModal={setIsModal} setProjectInfo={setProjectInfo} project={item} />
       ))}
 
       <ModalPortal>{isModal && <Modal onClick={setIsModal} projectInfo={projectInfo} />}</ModalPortal>

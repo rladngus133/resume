@@ -1,8 +1,17 @@
 import styled from "styled-components";
 import { IoLink } from "react-icons/io5";
 import { motion } from "framer-motion";
+import { TProject } from "../../utils/types";
+import React from "react";
 
-export default function ProjectSection({ setIsModal, setProjectInfo, title, date, sideTitle, descriptionList }: any) {
+type Props = {
+  setIsModal: React.Dispatch<React.SetStateAction<boolean>>;
+  setProjectInfo: React.Dispatch<React.SetStateAction<string>>;
+  project: TProject;
+};
+
+export default function ProjectSection({ setIsModal, setProjectInfo, project }: Props) {
+  const { title, date, sideTitle, descriptionList } = project;
   const lowerCaseTitle = title.toLowerCase();
 
   return (
