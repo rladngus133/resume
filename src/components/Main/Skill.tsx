@@ -2,17 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import Badge from "../Badge";
 import { motion } from "framer-motion";
+import Title from "../Common/Title";
 
 export default function Skill() {
   return (
     <>
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true, amount: "all" }}
-      >
+      <Title>
         Skill<span>.</span>
-      </motion.h2>
+      </Title>
       <Container
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ y: 0, opacity: 1 }}

@@ -61,21 +61,6 @@ const Section = styled.section`
   flex-direction: column;
   width: 100%;
 
-  & h2 {
-    color: black;
-    font-size: 50px;
-    font-weight: 500;
-    padding: 3px 2px;
-
-    & > span {
-      color: red;
-    }
-
-    @media all and (max-width: 768px) {
-      font-size: 35px;
-    }
-  }
-
   & p {
     font-size: 16px;
     padding: 3px 2px;

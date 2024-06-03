@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
+import Title from "../Common/Title";
 
 export default function Introduce() {
   return (
     <>
-      <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }}>
+      <Title>
         Introduce<span>.</span>
-      </motion.h2>
+      </Title>
       <Container initial={{ opacity: 0, y: 20 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }}>
         <p>
           2022년부터 프론트엔드 개발을 독학하며 2023년 10월경부터 부트캠프를 통해 개발 세상에 한 걸음 내딛은 프론트엔드

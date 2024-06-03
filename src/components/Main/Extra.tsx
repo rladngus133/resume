@@ -1,17 +1,13 @@
 import styled from "styled-components";
 import ExtraDescription from "./ExtraDescription";
-import { motion } from "framer-motion";
+import Title from "../Common/Title";
 
 export default function Extra() {
   return (
     <>
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true, amount: "all" }}
-      >
+      <Title>
         Extra<span>.</span>
-      </motion.h2>
+      </Title>
       <Container>
         <ExtraDescription listNum={1} title="- Soft Skill" />
       </Container>

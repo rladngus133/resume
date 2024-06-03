@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import ModalPortal from "../Modal/Portal";
 import Modal from "../Modal/Modal";
+import Title from "../Common/Title";
 
 export default function Project() {
   const [isModal, setIsModal] = useState(false);
@@ -10,13 +11,9 @@ export default function Project() {
 
   return (
     <>
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        viewport={{ once: true, amount: "all" }}
-      >
+      <Title>
         Project<span>.</span>
-      </motion.h2>
+      </Title>
       <Container
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ y: 0, opacity: 1 }}
