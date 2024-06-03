@@ -1,76 +1,29 @@
 import React from "react";
-import styled from "styled-components";
-import Skill from "./Skill";
+import MainSection from "../Common/MainSection";
 import Introduce from "./Introduce";
-import Experience from "./Experience";
+import Skill from "./Skill";
 import Project from "./Project";
 import Education from "./Education";
+import Experience from "./Experience";
 import Extra from "./Extra";
+
+const sections = [
+  { id: 1, component: <Introduce /> },
+  { id: 2, component: <Skill /> },
+  { id: 3, component: <Project /> },
+  { id: 4, component: <Education /> },
+  { id: 5, component: <Experience /> },
+  { id: 6, component: <Extra /> },
+];
 
 export default function Main() {
   return (
     <>
       <main>
-        <Container>
-          <Section>
-            <Introduce />
-          </Section>
-        </Container>
-        <Container>
-          <Section>
-            <Skill />
-          </Section>
-        </Container>
-        <Container>
-          <Section>
-            <Project />
-          </Section>
-        </Container>
-        <Container>
-          <Section>
-            <Education />
-          </Section>
-        </Container>
-        <Container>
-          <Section>
-            <Experience />
-          </Section>
-        </Container>
-        <Container>
-          <Section>
-            <Extra />
-          </Section>
-        </Container>
+        {sections.map((section) => (
+          <MainSection key={section.id}>{section.component}</MainSection>
+        ))}
       </main>
     </>
   );
 }
-
-const Container = styled.div`
-  display: flex;
-  padding: 45px 0;
-  border-bottom: 1px solid #eee;
-
-  @media all and (max-width: 768px) {
-    padding: 20px 0;
-  }
-`;
-
-const Section = styled.section`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  & p {
-    font-size: 16px;
-    padding: 3px 2px;
-    font-weight: 100;
-    line-height: 28px;
-
-    @media all and (max-width: 768px) {
-      font-size: 12px;
-      padding: 0;
-      line-height: 20px;
-    }
-  }
-`;
