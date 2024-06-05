@@ -62,7 +62,7 @@ export const experiences: TExperiences = {
       id: 3,
       title: "트랜스코스모스 코리아",
       date: "2011.04 ~ 2018.09",
-      sideTitle: "",
+      sideTitle: "Customer Service Representative",
       descriptionList: [
         { id: 1, description: "고객상담 및 민원, 불편요소등 해결" },
         { id: 2, description: "여러유형의 사람들을 겪으며 상황대처능력 및 커뮤니케이션 능력의 향상" },
