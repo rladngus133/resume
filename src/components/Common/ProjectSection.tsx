@@ -52,7 +52,7 @@ const Container = styled.div`
 `;
 
 const BorderLeft = styled.div`
-  border-left: 5px solid black;
+  border-left: 5px solid ${(props) => props.theme.colors.fontColor};
   padding-left: 20px;
 `;
 

@@ -7,7 +7,6 @@ export default function Title({ children, ...props }: { children: ReactNode } & 
 }
 
 const H2 = styled(motion.h2)`
-  color: black;
   font-size: 50px;
   font-weight: 500;
   padding: 3px 2px;
