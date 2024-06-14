@@ -6,17 +6,11 @@ import Main from "./components/Main/Main";
 import Progress from "./components/Progress";
 import GlobalFont from "./styles/GlobalFont";
 import GlobalStyle from "./styles/GlobalStyle";
-import { useState } from "react";
-import { dark, light } from "./styles/theme";
 import ToggleButton from "./components/Common/ToggleButton";
+import useHandleTheme from "./hooks/useTheme";
 
 function App() {
-  const [theme, setTheme] = useState(light);
-  function handleTheme() {
-    setTheme(theme === light ? dark : light);
-  }
-
-  console.log(theme);
+  const { theme, handleTheme } = useHandleTheme();
 
   return (
     <ThemeProvider theme={theme}>
