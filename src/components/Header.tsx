@@ -1,15 +1,15 @@
-import React from "react";
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaBlog } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import FlipCard from "./Common/FlipCard";
 
 export default function Header() {
   return (
     <Container>
-      <IMG src={`${process.env.PUBLIC_URL}/images/profile.png`} alt="프로필이미지" />
+      <FlipCard />
       <SideContainer>
         <h1>
           안녕하세요, <br />
@@ -64,14 +64,6 @@ const Container = styled.header`
       font-size: 16px;
       font-weight: 500;
     }
-  }
-`;
-
-const IMG = styled.img`
-  width: 15%;
-
-  @media all and (max-width: 768px) {
-    width: 110px;
   }
 `;
 
