@@ -26,7 +26,7 @@ const Modal = ({ onClick, projectInfo }: Props) => {
       projectInfoUrl: "https://wild-curiosity-a84.notion.site/Rolling-c1da51da5f444452a6aab17e7c8ce968?pvs=4",
     },
     taskify: {
-      url: "https://project-cf3j.vercel.app/",
+      url: "https://taskify39.vercel.app/",
       githubUrl: "https://github.com/3-9-taskify/project",
       projectInfoUrl: "https://wild-curiosity-a84.notion.site/Taskify-b5de2da1af45493f80ee43b613ecba47?pvs=4",
     },
